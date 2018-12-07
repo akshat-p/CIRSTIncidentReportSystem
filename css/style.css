@@ -1,0 +1,472 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+* {
+    font: 'bold' 'Lato', sans-serif;
+}
+
+.container {
+  height: auto;
+  overflow-y: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+tr {
+  cell-padding: 10px 0;
+}
+
+tr:nth-child(even) {
+  background: #ececec;
+}
+
+tr:first-child {
+  border-bottom: 2px solid #333;
+}
+
+th {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+
+td {
+  height: 25px;
+  font:'italic' 'bold' 'Lato', sans-serif;
+  color: #000;
+  font-size: 13px;
+  font-weight: 100;
+  padding: 10px;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+form div {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+label {
+    font:'italic' 'bold' 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+input[type="text"] {
+  font-size: 13px;
+  font-family: "Open Sans";
+  color: #000;
+  font-weight: 100;
+  padding: 10px 10px;
+  border: 1px solid #777777;
+  border-radius: 5px;
+  min-width: 200px;
+  margin-top: 8px;
+}
+
+select {
+  border: 1px solid #fff;
+  background: #fff;
+  font-weight: 100;
+  font-size: 13px;
+  padding: 5px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 3px 25px;
+  border-radius: 5px;
+font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+input[type="submit"] {
+  background: #00b8ff;
+  border: none;
+  color: black;
+}
+
+input[type="reset"] {
+  background: none;
+  color: black;
+  border: 1px solid #777777;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    border-radius: 10px;
+  padding: 10px;
+  margin: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  background: #999;
+}
+
+/*Form Style */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  /*width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;*/
+
+  background: transparent;
+  outline: none;
+  color: #afccbf;
+
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #bae3d3;
+  color: #000;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: transparent;
+  outline: none;
+
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+
+  border: solid 1px #b3aca7;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #bae3d3;
+  color: #000;
+}
+
+/*#submit {
+  width: 502px;
+
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+
+  outline:none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}*/
+
+.styled-select {
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
+}
+.styled-select select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px;
+  /* If you add too much padding here, the options won't show in IE */
+  width: 268px;
+}
+.styled-select.slate {
+  background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+  height: 34px;
+  width: 240px;
+}
+.styled-select.slate select {
+  border: 1px solid #000;
+  font-size: 16px;
+  height: 34px;
+  width: 268px;
+}
+
+.semi-square {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.blue {
+  background-color: #e2dedb;
+}
+
+.blue select {
+  color: #726659;
+}
+
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+/*popupwindow*/
+
+/* test env class */
+
+/* Classes for popup */
+.popup-window {
+  background-color: #22222278;
+  display: -ms-grid;
+  display: grid;
+  grid-template:
+    '. . .' 10%
+    '. window .' 1fr
+    '. . .' 10% / 30% 1fr 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.popup-page {
+  background-color: #fff;
+  border-radius: 6px;
+  grid-area: window;
+  padding: 2%;
+}
+
+/* Class that hides popup */
+
+.out {
+  opacity: 0;
+  display: none;
+}
+
+/* Keyframes for popup animation */
+@-webkit-keyframes pop-up {
+  from {
+    opacity: 0;
+    display: none;
+  }
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+@keyframes pop-up {
+  from {
+    opacity: 0;
+    display: none;
+  }
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@-webkit-keyframes away {
+  from {
+    opacity: 1;
+    display: block;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes away {
+  from {
+    opacity: 1;
+    display: block;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* Classes for popup */
+.pop-up {
+  -webkit-animation-name: pop-up;
+          animation-name: pop-up;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.away {
+  -webkit-animation-name: away;
+          animation-name: away;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.button {
+    background-color:#569c13 ; /* Green */
+    border: none;
+    color: white;
+    padding: 3px 25px;
+    border-radius: 5px;
+    font-family: "Oswald";
+    font-weight: 100;
+    font-size: 18px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+
+  background:#569c13 ;
+  border: none;
+  color: white;
+    /*background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;*/
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.button2:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+#top .logo img {
+    display: block;
+   width: 100%;
+    max-width: 100px; /* change this to whatever you want the 'standard' size to be */
+    height: auto;
+  }
+/*.logo { background: url("img/logo1.jpg") no-repeat; width: 100px; height: 100px; display: block; text-indent: -9999px;}*/
